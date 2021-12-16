@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "core-js": "^3.19.3",
-    "vue": "^3.5.3"{{#router}},
-    "vue-router": "^3.0.1"{{/router}}{{#vuex}},
+    "vue": "^2.6.14"{{#router}},
+    "vue-router": "^3.5.3"{{/router}}{{#vuex}},
     "vuex": "^3.6.2"{{/vuex}}
   },
   "devDependencies": {
