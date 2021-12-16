@@ -1,8 +1,8 @@
 {
-  "name": "data-gov-web",
+  "name": "{{ name }}",
   "version": "1.0.0",
-  "description": "基于国信二期抽离的模板",
-  "author": "IDSS-FED",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
