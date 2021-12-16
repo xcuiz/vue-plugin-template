@@ -12,7 +12,7 @@ const getPages = () => {
       index: {
         entry: "src/main.js",
       },
-      {{name}}: {
+      "{{name}}": {
         entry: "./setup-public-path",
       },
     };
