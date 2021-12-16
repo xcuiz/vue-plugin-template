@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     {{#router}}
-    <router-view/>
+    <router-view />
     {{else}}
     <h1>Hello World</h1>
     {{/router}}

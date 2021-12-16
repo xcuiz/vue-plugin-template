@@ -26,7 +26,8 @@ module.exports = {
   },
   filters: {
     'src/store/**/*': 'vuex',
-    'src/router/**/*': 'router'
+    'src/router/**/*': 'router',
+    'src/views/example/**/*': 'router'
   },
   completeMessage:
     'To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}yarn install\n  yarn run serve',
