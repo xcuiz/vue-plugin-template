@@ -1,16 +1,14 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-const IndexPage = (resolve)=>{require(['../page/IndexPage.vue'], resolve)};
+const Example = () => import('@/views/example/index.vue')
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
-    {
-      path: '/',
-      name: 'Index',
-      component: IndexPage,
-    },
-  ],
+    path: '/',
+    name: 'Example',
+    component: Example
+  ]
 });
