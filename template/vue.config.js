@@ -1,7 +1,7 @@
 const GitVersionPlugin = require("git-version-html-webpack-plugin");
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
-const ModuleFederationPlugin = require("webpack").container
-  .ModuleFederationPlugin;
+const ModuleFederationPlugin =
+  require("webpack").container.ModuleFederationPlugin;
 const { getPublicPath } = require("./src/publicPath");
 
 const isProduction = process.env.NODE_ENV === "production";
@@ -55,7 +55,7 @@ module.exports = {
 
   devServer: {
     host: "0.0.0.0",
-    port: 9090
+    port: 9090,
   },
 
   // 在开发环境下，在每次保存时 lint 代码
