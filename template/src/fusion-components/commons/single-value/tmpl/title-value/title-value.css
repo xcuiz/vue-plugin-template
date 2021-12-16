@@ -1,0 +1,86 @@
+.idss-title-value {
+  --single-value-title-bg: var(--color-bg-5, transparent);
+  --single-value-title-value-bg-hover: var(--color-font-6,#1890ff);
+  --single-value-title-value-title-color: var(--color-font-2,#6a7280);
+  --single-value-title-value-title-font-size: var(--font-size-4, 14px);
+  --single-value-title-value-value-font-size: var(--font-digital-size-2, 24px);
+  --single-value-title-value-desc-font-size: var(--font-size-sub,12px);
+  --single-value-title-value-arrow-border-color-hover: var(--color-font-6,#1890ff);
+
+  background-color: var(--single-value-title-bg);
+  border: var(--line-size-default,1px) solid var(--color-line-default, rgba(204,211,217,0.5));
+  text-align: center;
+  position: relative;
+
+  &.no-border {
+    border: none;
+  }
+
+  &.active,&:hover {
+    background-color: var(--single-value-title-value-bg-hover);
+    color: #fff;
+  }
+
+  &.is-stretch {
+    width: 100%;
+  }
+  .ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    display: block;
+  }
+
+  &_title {
+    color: var(--single-value-title-value-title-color);
+    font-size: var(--single-value-title-value-title-font-size);
+    padding-bottom: 10px;
+  }
+
+  &_value {
+    font-size: var(--single-value-title-value-value-font-size);
+    font-weight: bold;
+  }
+  &_desc {
+    font-size: var(--single-value-title-value-desc-font-size);
+    padding-left: 5px;
+  }
+
+  /* active 下的箭头，当前只在正下方显示，后期可以扩展为4个方向都可以显示 */
+  &.active::after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+  &.active.arrow-down::after {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 12px solid var(--single-value-title-value-arrow-border-color-hover);
+    bottom: -12px;
+  }
+  &.active.arrow-up::after {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 12px solid var(--single-value-title-value-arrow-border-color-hover);
+    top: -12px;
+  }
+  &.active.arrow-left::after {
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 12px solid var(--single-value-title-value-arrow-border-color-hover);
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &.active.arrow-right::after {
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid var(--single-value-title-value-arrow-border-color-hover);
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

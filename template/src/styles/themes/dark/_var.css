@@ -1,0 +1,478 @@
+/*
+ * 变量命名规范：--组件-描述-修饰 eg: --font-color-default
+ * 分组方式：全局通用（不在组件内使用） & 组件分组（组件内使用）
+ */
+ :root {
+  /* Colors - 告警颜色/主要颜色
+  * 在线颜色命名工具：http://chir.ag/projects/name-that-color/#6195ED
+  * 注意：不在组件内直接使用以下颜色值
+  ---------------------------- */
+  --gray: #4d4e4e;          /* 基础颜色 -- 灰色 */
+  --silver: #CCCCCC;        /* 基础颜色 -- 银色 */
+  --light-gray: #F6F6F6;    /* 基础颜色 -- 浅灰色 */
+  --red: #FF0000;           /* 基础颜色 -- 红色 */
+
+  --black: #000000;           /* 字体颜色 -- 黑色 */
+  --white: #FFFFFF;           /* 基础颜色 -- 白色 */
+
+  /* --color-primary: #5D87DD;    链接高亮等样色 */
+  --color-primary: #333;    /* 链接高亮等样色 */
+  --color-primary-light-1: rgba(95, 135, 221, .1);
+  --color-primary-light-2: rgba(95, 135, 221, .2);
+
+  --color-success: #99CC33;    /* 成功状态的颜色 */
+  --color-warning: #F28C51;    /* 告警状态的颜色 */
+  --color-error: #CF4343;      /* 失败状态的颜色 */
+
+  --color-info: #909399;
+  --color-info-light-1: rgba(144, 147, 153, .1);
+  --color-info-light-2: rgba(144, 147, 153, .2);
+
+  /* 威胁等级颜色值控制 */
+  --color-emergency: #CF4343;   /* 危机 */
+  --color-high: #F28C51;        /* 高 */
+  --color-medium: #F6C758;      /* 中 */
+  --color-low: #5D87DD;         /* 低 */
+  --color-info-extra: #6299EC;  /* 信息 */
+
+  /* Transition
+  ------------------------------ */
+  --transition-duration: .3s;
+  --transition-timing-function: cubic-bezier(.645, .045, .355, 1);
+
+  /* Body
+  --------------------------- */
+  --body-bg-color: #F4F6F9;
+
+  /* Layout
+  -------------------------- */
+  --layout-gutter: 10px;
+  --layout-transition: width var(--transition-duration) var(--transition-timing-function);
+
+  /* Font
+  -------------------------- */
+  --font-color-default: #5E6B7A; /* 字体默认颜色 */
+  --font-color-base: var(--white);
+  --font-size-12: 1.2rem;
+  --font-size-13: 1.3rem;
+  --font-size-14: 1.4rem;
+  --font-size-16: 1.6rem;
+
+   /* Icon
+  -------------------------- */
+  --icon-new-tag-color: #CF4343;
+
+  /* Border
+  -------------------------- */
+  --border-default: 1px solid #d3d3d3;
+  --box-border-color: #d3d3d3;
+  --border-radius-default: 1px;
+  --border-radius: 3px;
+
+  /* Switch
+  -------------------------- */
+  --switch-default-color: #999999;
+  --switch-active-color: #5D87DD;
+  --switch-border-color: #EBEBEB;
+  --switch-bg-color: #EBEBEB;
+  --switch-after-border-color: #5D87DD;
+  --switch-after-bg-color: #5D87DD;
+
+  /* input
+  -------------------------- */
+  --input-placeholder-color: #929FB4;
+  --input-border-radius: var(--border-radius-default);
+  --input-border-active-color: var(--color-primary);
+
+  /* Textarea
+  -------------------------- */
+  --textarea-border-radius: var(--border-radius-default);
+
+  /* Select
+  --------------------------- */
+  --select-font-color-active: var(--color-primary);
+  --select-border-color-focus: var(--color-primary);
+
+  /* Checkbox
+  ------------------------------ */
+  --checkbox-label-font-color-checked: var(--color-primary);
+  --checkbox-input-bg-color-checked: var(--color-primary);
+  --checkbox-input-border-color-hover: var(--color-primary);
+  --checkbox-input-border-color-checked: var(--color-primary);
+
+  /* Radio
+  ------------------------------- */
+  --radio-label-font-color-checked: var(--color-primary);
+  --radio-input-bg-color-checked: var(--color-primary);
+  --radio-input-border-color-checked: var(--color-primary);
+
+  /* Tag
+  ------------------------------ */
+  --tag-font-color: var(--color-primary);
+  --tag-bg-color: var(--color-primary-light-1);
+  --tag-border-color: var(--color-primary-light-2);
+  /* info */
+  --tag-font-color-info: var(--color-info);
+  --tag-bg-color-info: var(--color-info-light-1);
+  --tag-border-color-info: var(--color-info-light-2);
+
+  /* Pannel
+  -------------------------- */
+  --panel-bg-color-base: #f2f2f2;
+
+  /* Button
+  -------------------------- */
+  --button-border-radius: var(--border-radius-default);
+  --button-font-color-hover: var(--color-primary);
+  --button-border-color-hover: var(--color-primary-light-2);
+  /* --button-bg-color-hover: #ecf5ff; */
+  --button-text-color: #5D87DD;
+  --button-hover-color: #c5e3fd;
+  --button-delete-color: var(--color-error);
+  --button-text-disabled-color: #CCCCCC;
+  --button-default-color: #FFFFFF, #F6F6F6;
+  --button-success-disabled-color: #E0F0C1;
+  --button-warning-disabled-color: #FBDCCA;
+  --button-danger-disabled-color: #F1C6C6;
+  --button-linear-gradient: (#fff, #f6f6f6);
+
+  /* Table
+  -------------------------- */
+  --table-font-default: #5E6B7A; /*  表格内容颜色 */
+  --table-header-font-color: #000000; /*  表格头部颜色 */
+  --table-pagination-bg-color: #515151;
+  --table-pagination-color: #515151; /*  分页按钮颜色 */
+  --table-row-highlight-color: #c9e5f5; /* 表格高亮 */
+  --stripe-table-header-bg-color: #FAFAFA; /* 斑马线表格头部背景色 */
+  --table-header-bg-color: #EFF1F4; /*表头背景颜色*/
+  --table-border-color: #E6E6E6; /*表格框颜色*/
+  /* input
+  -------------------------- */
+  --input-slot-color: #409eff;
+
+  /* Tabs
+  ------------------------------ */
+  --tabs-font-color-active: var(--color-primary);
+
+  /* z-index 等级控制
+  popover( 2000开始累加) > menu > navigator = header  > loadding > 其他
+  ----------------------------------*/
+  --zindex-base: 1001;
+  --zindex-loading: 1500;
+  --zindex-menu: 1999;
+  --zindex-header: 1990;
+  --zindex-navigator: 1990;
+  --alarm-loading-zindex: 2500; /*特殊控制，popover默认显示，所以loading层级应该大于popover*/
+
+  /*
+	header & Menu 尺寸控制，联动关系
+  -------------------------- */
+  --header-height: 46px;
+  --menu-collapse-width: 62px;
+  --menu-spread-width: 180px;
+  --navigator-height: 45px;
+
+  /* header
+  -------------------------- */
+  --header-bg-color: #353535;
+  --header-title-color: linear-gradient(180deg,#F1D89A,#907B3D);
+  --header-border-color: rgba(36, 36, 36, 1);
+  --header-txt-color: var(--white);
+  --header-line-light: #444;
+  --header-line-dark: #222;
+
+  /* navigator
+   --------------------------*/
+  --navigator-bg-color: rgba(250, 250, 250, 0.8);
+  --navigator-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  --navigator-item-bg-color: #f1f1f1;
+  --navigator-item-font-color: #666;
+  --navigator-item-border-color: #d2d2d2;
+  --navigator-item-bg-color-active: linear-gradient(180deg,#fee279,#e5a936);
+  --navigator-item-font-color-active: #855f02;
+  --navigator-item-border-color-active: #f0c152;
+  --navigator-item-close-bg-hover: #aeafb1;
+  --navigator-item-close-bg-active-hover: #baa265;
+  --navigator-contextmenu-bg-color: var(--white);
+  --navigator-contextmenu-bg-color-active: #eee;
+  --navigator-contextmenu-font-color: #333;
+  --navigator-contextmenu-icon-close-color: #CF4343;
+  --navigator-contextmenu-icon-refresh-color: #5D87DD;
+  --navigator-transition: left var(--transition-duration) var(--transition-timing-function);
+
+  /* module
+  ---------------------------*/
+  --module-display-background: #F5F5F5;
+
+  /* 单值
+  -------------------------- */
+  --single-bg-color: linear-gradient(to bottom, #46BCFF, #65CEF6);
+  --single-txt-color: #fff;
+  --single-siring: #F76741;
+  --single-drop: #056D9B;
+  --single-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  --single-icon-color: #858585;
+  --single-icon-active-color: var(--font-color-default);
+  --single-icon-bg-color: #F2F2F2;
+  --single-border-color: #DFDFDF;
+  --single-border-radius: var(--border-radius);
+  --single-popover-bg-color: #F4F4F4;
+  --single-popover-border-color: #D3D3D3;
+  --single-popover-cancel-color: #EAEBEC;
+  --single-popover-sure-color: #F4F4F4;
+
+  /* Widget
+  ------------------------------- */
+  --widget-border: var(--border-default);
+  --widget-bg-color: var(--white);
+  --widget-bg-translucent-color: rgba(255, 255, 255, 0.5);
+  --widget-gutter: var(--layout-gutter);
+
+  /* Bullseye
+  ------------------------------- */
+  --bullseye-title-color: var(--bullseye-content-bg-color);
+  --bullseye-content-bg-color: rgba(51, 204, 204, 1);
+  --bullseye-content-bg-color1: rgba(51, 204, 204, 0.4);
+  --bullseye-content-bg-color2: rgba(51, 204, 204, 0.2);
+  --bullseye-content-font-color: var(--white);
+
+  /* tree-select
+  ------------------------------- */
+  --select-cover-color: #606266;
+  --select-cover-border-color: #dcdfe6;
+  --select-hover-color: #409eff;
+  --select-txt-color: #c4c8cf;
+
+  /*
+   新大盘
+  -------------------------- */
+  --insight-menu-background: #FFFFFF;
+  --insight-menu-list-background: #F8F8F8;
+  --insight-menu-list-item-border: #E1E1E1;
+  --insight-menu-list-item-color: #333333;
+  --insight-menu-list-add-icon-color: #D0D0D0;
+  --insight-menu-list-item-edit-background: var(--white);
+  --insight-menu-list-item-active-background: var(--white);
+
+  --insight-menu-time-item-color: #666666;
+  --insight-menu-time-item-border: #D2D2D2;
+
+  --insight-dashboard-widget-background: var(--white);
+  --insight-dashboard-widget-title-color: #888888;
+  --insight-component-background: #FFFFFF;
+  --insight-component-border: #E2E2E2;
+  --insight-component-box-icon-color: #999999;
+  --insight-component-box-text-color: #888888;
+  --insight-active-color: #04A5F1;
+  --insight-chart-text: #666666;
+  --insight-chart-increase: #FF0000;
+  --insight-chart-reduce: #5BDC3A;
+  --insight-chart-disabled: #c8c9cc;
+  --insight-filter-bg-color: #EBEBEB;
+
+	/*
+   全文检索
+  -------------------------- */
+	--full-search-field-septal-line-color: rgba(204, 204, 204, 1);
+	--full-search-field-border-color: rgba(204, 204, 204, 1);
+  --full-search-field-checked: #48b1ff;
+
+  /*
+   详情看板
+  -------------------------- */
+  --event-board-form-bg-color:rgba(242, 242, 242, 1);
+	--ip-asset-board-border-color: rgba(204, 204, 204, 1);
+	--ip-board-intelligence-form-item-border-color: #d3d3d3;
+
+	 /*
+   模型监控
+	-------------------------- */
+	--run-state-background-color: #FEF0F0;
+	--stop-state-background-color: #ECF5FF;
+	--run-state-border: 1px solid #FEE2E1;
+	--stop-state-border:1px solid #B2D7FF;
+
+  /*
+   时间选择控件
+  -------------------------- */
+  --time-select-color: #666666;
+  --time-select-border: #D2D2D2;
+  --time-select-disabled-background: #F5F7Fa;   
+  --time-select-disabled-border: #E4E7ED;
+  --time-select-disabled-color: #C0C4CC;
+  --time-select-display-background: #FFFFFF;
+  --time-select-el-button-color: #666666;
+  --time-select-el-button-color-hover: #5D87DD;
+  --time-select-el-tabs-item-color: #606266;
+  --time-select-el-tabs-item-hover: #5D87DD;
+  --time-select-el-tabs-item-active: #5D87DD;
+
+  /* 登录相关
+  ----------------------------- */
+  --login-bg: linear-gradient(to bottom, #434343, #333333, #242424);
+  --login-font-color: #fff;
+  --login-panel-bg-color: rgba(0, 0, 0, .1);
+  --login-panel-border-color: #424242;
+  --login-title-color: #DDBB61;
+  --login-link-font-color: #fff;
+  --login-input-border-color: #666;
+  --login-input-font-color: #fff;
+  --login-input-icon-color: #666;
+  --login-button-bg: linear-gradient(to bottom, #E8D17F, #C48B1D);
+  --login-button-font-color: #fff;
+  --login-error-color: var(--color-error);
+  --login-loading-bg: rgba(48, 48 ,48 , .8);
+  --login-loading-progress-bg: #434343;
+  --login-loading-progress: linear-gradient(to bottom, #E8D17F, #C48B1D);
+
+  /* 数据标签
+  --------------------------------- */
+  --dataLabel-bg-color: #fff;
+  --dataLabel-border: var(--border-default);
+  --dataLabel-label-bg-color: #eee;
+
+  /* 资产管理 状态颜色
+  --------------------------------- */
+  --asset-online-bg-color: rgba(0, 128, 0, 1);  /* 在线 */
+  --asset-offline-bg-color: rgba(188, 188, 188, 1); /* 离线 */
+  --asset-illegal-bg-color: rgba(207, 67, 67, 1); /* 非法资产 */
+
+  /* 资产生命周期报告 颜色
+  --------------------------------- */
+  --asset-detail-label-bg: rgba(242,242,242,1);
+  --asset-detail-content-bg: rgba(245,245,245,1);
+
+  /* 风控场景分析 颜色
+  --------------------------------- */
+  --wind-control-scene-color: #66CCFF;
+  
+  /* idss-widget 
+  --------------------------------- */
+  --widget-border: 1px solid #57A5FF;
+    --widget-header-bg: rgb(255, 255, 255, 0);
+    --widget-header-padding: 8px 15px;
+    --widget-header-primary-border-bottom: 1px solid #008CFF;
+    --widget-header-primary-bg: linear-gradient(
+        180deg,
+        rgba(249, 249, 249, 1) 0%,
+        rgba(249, 249, 249, 1) 0%,
+        rgba(209, 209, 209, 1) 100%,
+        rgba(209, 209, 209, 1) 100%
+    );
+
+    /* idss-steps-view 
+    --------------------------------- */
+    /* steps-list */
+    --steps-list-description-color: #333;
+    --steps-list-description-param-color: #FFF;
+    --steps-list-url-bg: #5D87DD;
+    --steps-list-target-bg: #5D87DD;
+    --steps-list-operation-bg: #F28C51;
+    --steps-list-success-bg: #99CC33;
+    --steps-list-error-bg: #CF4343;
+    
+    /* steps-table */
+    --steps-table-description-bg: #679ACF;
+    --steps-table-description-color: #FFF;
+    --steps-table-sub-title-color: #000;
+
+    /* idss-single-value 
+    --------------------------------- */
+    --single-value-title-value-background: #fff;
+    --single-value-title-value-border-color: 1px solid #d3d3d3;
+    --single-value-title-value-hover-background: #6299EC;
+    --single-value-title-value-title-size: 14px;
+    --single-value-title-value-value-size: 24px;
+    --single-value-title-value-desc-size: 12px;
+    --single-value-title-value-arrow-hover-color: #6299EC;
+
+    --single-value-progress-background: #fff;
+    --single-value-progress-border-color: 1px solid #d3d3d3;
+    --single-value-progress-text-color: #5D87DD;
+    --single-value-progress-title-size: 14px;
+    --single-value-progress-unit-size: 12px;
+    --single-value-progress-value-size: 26px;
+
+    --single-value-panel-background: #fff;
+    --single-value-panel-border-color: 1px solid #d3d3d3;
+    --single-value-panel-name-size: 14px;
+    --single-value-panel-value-size: 28px;
+    --single-value-panel-right-name-size: 14px;
+
+    --single-value-progress-subvalue-view-background: #F3613A;
+
+    /* drag-container 
+    --------------------------------- */
+    --drag-container-border: 1px solid #d3d3d3;
+
+    /* idss-rich-text
+    --------------------------------- */
+    --idss-rich-text-editor-bg: #FFF;
+
+    /* idss-muitl-tab */
+    --idss-multi-tab-li-bg:#fff;
+    --idss-multi-tab-bg:linear-gradient(180deg, rgba(249, 249, 249, 1) 0%, rgba(249, 249, 249, 1) 0%, rgba(209, 209, 209, 1) 100%, rgba(209, 209, 209, 1) 100%);
+    --idss-multi-tab-border-color:#ccc;
+    --idss-multi-tab-ellipsis-tab-border-color:#ccc;
+
+    /* idss-analytic-logic */
+    --idss-analytic-logic-color: #64aadd;
+    --idss-analytic-logic-svg-color: #e6f5ff;
+    --idss-analytic-logic-svg-hover-color: #009cfb;
+    --idss-analytic-logic-svg-hover-fill-color: #fff;
+    --idss-analytic-logic-svg-delete-hover-fill-color: #ff6c6c;
+
+    /* idss-ace-editor */
+    --idss-ace-editor-wave-color: red;
+
+    /* idsss-flow-chart 
+    --------------------------*/
+  --idss-flow-chart-bg: #FFF;
+  --idss-flow-chart-case-text-color: #929FB4;
+  --idss-flow-chart-drop-bg: rgba(246, 249, 255, 1);
+  --idss-flow-chart-drop-border: rgb(242, 242, 242);
+
+  --idss-flow-chart-label-yes-color: #F58719;
+  --idss-flow-chart-label-yes-border: rgba(245, 135, 25, .8);
+  --idss-flow-chart-label-yes-bg: rgb(253, 243, 229);
+  --idss-flow-chart-label-no-color: #F3613B;
+  --idss-flow-chart-label-no-border: rgba(243, 97, 59, .8);
+  --idss-flow-chart-label-no-bg: rgb(252, 237, 237);
+  
+  --idss-flow-chart-start-bg: #7A9AF8;
+  --idss-flow-chart-start-color: #FFF;
+  --idss-flow-chart-square-bg: #0099FF;
+  --idss-flow-chart-square-color: #FFF;
+  --idss-flow-chart-rhombic-color: #F58719;
+
+  --idss-flow-chart-content-type-border-color: #F2F2F2;
+  --idss-flow-chart-content-color: #666;
+  --idss-flow-chart-content-bg-color: #FFF;
+
+  /* 未执行 */
+  --idss-flow-chart-square-todo-color: #D48806;
+  /* 执行中 */
+  --idss-flow-chart-square-execute-color: #4A90E2;
+  /* 成功 */
+  --idss-flow-chart-square-success-color: #08979C;
+  /* 失败 */
+  --idss-flow-chart-square-fail-color: #D4380D;
+  /* 异常 */
+  --idss-flow-chart-square-exception-color: #D4B106;
+
+  /* 老板页 */
+  --main-page-single-icon-orange-color: rgba(252, 190, 97, 1);
+  --main-page-save-icon-blue-color: rgba(59, 156, 255, 1);
+  --main-page-save-icon-red-color: rgba(246, 120, 119, 1);
+  --main-page-save-circular-inner-color: rgba(126, 204, 255, 1);
+  --main-page-save-circular-outer-color: rgba(179, 225, 255, 1);
+  /* 系统管理-数据接入任务管理 */
+  --idss-manage-taskTable-row-svg-color: #adadaf;
+  --idss-manage-taskTable-row-blue-color: rgb(64, 158, 255, 0.1);
+  --idss-manage-taskTable-row-green-color: rgb(85, 220, 212, 0.1);
+  --idss-manage-taskTable-row-red-color: rgb(204, 153, 204, 0.1);
+  --idss-manage-taskTable-row-regreen-color: #55dcd4;
+  --idss-manage-taskTable-row-rered-color: #fdd9fd;
+}
+
+  

@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "content": [
+    {
+      "value": "mailCnt",
+      "key": "mailCnt"
+    },
+    {
+      "value": "totalFee",
+      "key": "totalFee"
+    }
+  ],
+  "msg": "",
+  "errorCode": ""
+}

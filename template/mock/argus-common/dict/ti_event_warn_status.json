@@ -1,0 +1,36 @@
+{
+  "errorCode" : "000000",
+  "message" : "服务执行成功",
+  "content" : [ {
+    "value" : "忽略",
+    "key" : "0"
+  }, {
+    "value" : "异常",
+    "key" : "5"
+  }, {
+    "value" : "待认领",
+    "key" : "6"
+  }, {
+    "value" : "调查中",
+    "key" : "7"
+  }, {
+    "value" : "处置中",
+    "key" : "8"
+  }, {
+    "value" : "驳回",
+    "key" : "1"
+  }, {
+    "value" : "二次调查",
+    "key" : "9"
+  }, {
+    "value" : "误报",
+    "key" : "2"
+  }, {
+    "value" : "调查完成",
+    "key" : "3"
+  }, {
+    "value" : "处置完成",
+    "key" : "4"
+  } ],
+  "status" : "success"
+}

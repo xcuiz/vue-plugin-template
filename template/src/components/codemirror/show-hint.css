@@ -1,0 +1,119 @@
+.CodeMirror-hints {
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  list-style: none;
+
+  margin: 0;
+  padding: 2px;
+
+  -webkit-box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+  -moz-box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+  box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+  border-radius: 3px;
+  border: 1px solid silver;
+
+  background: white;
+  font-size: 90%;
+  font-family: monospace;
+
+  max-height: 20em;
+  overflow-y: auto;
+}
+
+.CodeMirror-hint {
+  margin: 0;
+  padding: 0 4px;
+  border-radius: 2px;
+  white-space: pre;
+  color: black;
+  cursor: pointer;
+}
+
+li.CodeMirror-hint-active {
+  background: #08f;
+  color: white;
+}
+
+
+
+
+.CodeMirror-hints.show-hint-info {
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  
+  box-shadow: 0px -2px 6px 2px rgba(0, 0, 0, .1);
+  border-bottom: none;
+
+  border-radius: 3px;
+
+  background: white;
+  font-size: 90%;
+  font-family: monospace;
+
+  overflow-y: auto;
+  width: 650px;
+  max-height: 300px;
+  border: none;
+}
+
+.CodeMirror-hints.show-hint-info::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/*滚动条滑块*/
+.CodeMirror-hints.show-hint-info::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  /*background: red;*/
+}
+
+/*滚动条轨道*/
+.CodeMirror-hints.show-hint-info::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  background: rgba(255, 255, 255, 0);
+}
+
+.show-hint-info .CodeMirror-hint {
+  color: black;
+  cursor: pointer;
+  line-height: 30px;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.show-hint-info li.CodeMirror-hint-active {
+  color: #2662FC;
+  background-color: #fff;
+}
+
+.CodeMirror-hint-info {
+  position: absolute;
+  z-index: 2501;
+  background-color: #fff;
+  width: 650px;
+  box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, .1);
+  background-color: #F7F8FA;
+  padding: 10px;
+}
+
+.CodeMirror-hint-info .hint-info-title {
+  display: flex;
+  justify-content: space-between;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.CodeMirror-hint-info .hint-info-title .title-text {
+  color: #3C444D;
+  line-height: 20px;
+  font-size: 12px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.CodeMirror-hint-info .hint-info-title .title-href {
+}

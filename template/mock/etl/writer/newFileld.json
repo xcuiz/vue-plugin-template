@@ -1,0 +1,28 @@
+{
+  "status": "success",
+  "content": {
+    "indexName": "",
+    "sourceCfg": {
+      "cycleScope": "",
+      "shardNum": "",
+      "replicaNum": "",
+      "maxCapacity": "",
+      "maxKeepDays": "",
+      "strategy": ""
+    },
+    "fields": [
+      {
+        "fieldName": "mailCnt",
+        "matchField": "1",
+        "fieldType": "·"
+      },
+      {
+        "fieldName": "totalFee",
+        "matchField": "1",
+        "fieldType": "1"
+      }
+    ]
+  },
+  "msg": "",
+  "errorCode": ""
+}

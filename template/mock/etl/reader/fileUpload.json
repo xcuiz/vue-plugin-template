@@ -1,0 +1,5 @@
+{
+  "status": "success",
+  "msg": "上传成功",
+  "fileName": "/opt/log/log.txt"
+}

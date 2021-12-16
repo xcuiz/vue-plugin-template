@@ -1,0 +1,33 @@
+{
+  "errorCode": "000000",
+  "message": "服务执行成功",
+  "content": [{
+    "value": "无计算方式",
+    "key": "none"
+  }, {
+    "value": "计数",
+    "key": "count"
+  }, {
+    "value": "计数去重",
+    "key": "count_distinct"
+  }, {
+    "value": "求和",
+    "key": "sum"
+  }, {
+    "value": "平均",
+    "key": "avg"
+  }, {
+    "value": "最大值",
+    "key": "max"
+  }, {
+    "value": "最小值",
+    "key": "min"
+  }, {
+    "value": "标准差",
+    "key": "std_dev"
+  }, {
+    "value": "中位数",
+    "key": "median"
+  }],
+  "status": "success"
+}

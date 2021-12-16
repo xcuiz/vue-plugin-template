@@ -1,0 +1,69 @@
+{
+  "status": "success",
+  "content": {
+    "pageNum": 1,
+    "pageSize": 5,
+    "total": 10,
+    "data": [
+      {
+        "timeStamp": "2020-01-11 08:27:10",
+        "content": "<14>Jul 25 14:02:23 localhost waf: tag:waf_log_login stat_time:2017-07-25 14:02:23 src_ip:192.168.250.4 user:admin password: session_id:afdc98be6ada37e76d988c8f4a4ae7bf desc: op_type:Login result:success src_port:8981",
+        "isContentTime": "1"
+      },
+      {
+        "timeStamp": "2020-01-11 08:26:10",
+        "content": "<14>Jan 11 08:26:10 localhost waf: tag:waf_log_wafstat stat_time:2017-01-11 08:25:00  cpu:6  mem:16",
+        "isContentTime": "1"
+      },
+      {
+        "timeStamp": "2020-01-11 08:25:10",
+        "content": "<14>Jan 11 08:25:10 localhost waf: tag:waf_log_wafstat stat_time:2017-01-11 08:24:00  cpu:7  mem:16",
+        "isContentTime": "1"
+      },
+      {
+        "timeStamp": "2020-01-11 08:24:10",
+        "content": "<14>Jan 11 08:24:10 localhost waf: tag:waf_log_wafstat stat_time:2017-01-11 08:23:00  cpu:12  mem:16",
+        "isContentTime": "1"
+      },
+      {
+        "timeStamp": "2020-01-11 08:25:10",
+        "content": "<14>Jan 11 08:25:10 localhost waf: tag:waf_log_wafstat stat_time:2017-01-11 08:24:00  cpu:7  mem:16",
+        "isContentTime": "1"
+      },
+      {
+        "timeStamp": "2020-01-11 08:24:10",
+        "content": "<14>Jan 11 08:24:10 localhost waf: tag:waf_log_wafstat stat_time:2017-01-11 08:23:00  cpu:12  mem:16",
+        "isContentTime": "1"
+      }, {
+        "timeStamp": "2020-01-11 08:25:10",
+        "content": "<14>Jan 11 08:25:10 localhost waf: tag:waf_log_wafstat stat_time:2017-01-11 08:24:00  cpu:7  mem:16",
+        "isContentTime": "1"
+      },
+      {
+        "timeStamp": "2020-01-11 08:24:10",
+        "content": "<14>Jan 11 08:24:10 localhost waf: tag:waf_log_wafstat stat_time:2017-01-11 08:23:00  cpu:12  mem:16",
+        "isContentTime": "1"
+      }, {
+        "timeStamp": "2020-01-11 08:25:10",
+        "content": "<14>Jan 11 08:25:10 localhost waf: tag:waf_log_wafstat stat_time:2017-01-11 08:24:00  cpu:7  mem:16",
+        "isContentTime": "1"
+      },
+      {
+        "timeStamp": "2020-01-11 08:24:10",
+        "content": "<14>Jan 11 08:24:10 localhost waf: tag:waf_log_wafstat stat_time:2017-01-11 08:23:00  cpu:12  mem:16",
+        "isContentTime": "1"
+      }, {
+        "timeStamp": "2020-01-11 08:25:10",
+        "content": "<14>Jan 11 08:25:10 localhost waf: tag:waf_log_wafstat stat_time:2017-01-11 08:24:00  cpu:7  mem:16",
+        "isContentTime": "1"
+      },
+      {
+        "timeStamp": "2020-01-11 08:24:10",
+        "content": "<14>Jan 11 08:24:10 localhost waf: tag:waf_log_wafstat stat_time:2017-01-11 08:23:00  cpu:12  mem:16",
+        "isContentTime": "1"
+      }
+    ]
+  },
+  "msg": "查询成功",
+  "errorCode": ""
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "content": [
+    {
+      "value": ">",
+      "key": "gt"
+    },
+    {
+      "value": "<",
+      "key": "lt"
+    },
+    {
+      "value": ">=",
+      "key": "ge"
+    },
+    {
+      "value": "<=",
+      "key": "le"
+    },
+    {
+      "value": "=",
+      "key": "eq"
+    },
+    {
+      "value": "!=",
+      "key": "ne"
+    }
+  ],
+  "msg": "查询成功",
+  "errorCode": ""
+}

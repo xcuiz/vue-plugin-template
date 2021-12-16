@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "content": [
+    {
+      "funcName": "正则解析",
+      "funcCode": "REG",
+      "icon": null,
+      "funcDesc": "正则解析"
+    },
+    {
+      "funcName": "Json解析",
+      "funcCode": "JSON",
+      "icon": null,
+      "funcDesc": "Json解析"
+    },
+    {
+      "funcName": "KeyValue解析",
+      "funcCode": "KV",
+      "icon": null,
+      "funcDesc": "KeyValue解析"
+    },
+    {
+      "funcName": "分隔符拆分",
+      "funcCode": "SPLIT",
+      "icon": null,
+      "funcDesc": "分隔符拆分"
+    }
+  ],
+  "msg": "",
+  "errorCode": ""
+}

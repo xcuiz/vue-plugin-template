@@ -1,0 +1,19 @@
+{
+  "errorCode": "000000",
+  "message": "service executed successfully",
+  "content": [
+    {
+      "value": "Read Only",
+      "key": "all none none"
+    },
+    {
+      "value": "Read&Write",
+      "key": "all all none"
+    },
+    {
+      "value": "All",
+      "key": "all all all"
+    }
+  ],
+  "status": "success"
+}

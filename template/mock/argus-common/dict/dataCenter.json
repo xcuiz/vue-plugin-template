@@ -1,0 +1,19 @@
+{
+  "errorCode": "000000",
+  "message": "服务执行成功",
+  "content": [
+    {
+      "value": "主数据中心",
+      "key": "dataCenter-master"
+    },
+    {
+      "value": "东莞数据中心",
+      "key": "dataCenter-dongguan"
+    },
+    {
+      "value": "就是这个中心",
+      "key": "thiscenter"
+    }
+  ],
+  "status": "success"
+}

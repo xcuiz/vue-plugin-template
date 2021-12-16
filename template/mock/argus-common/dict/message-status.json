@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "content": [
+    {
+      "key": "unread_msg",
+      "value": "未读"
+    },
+    {
+      "key": "read_msg",
+      "value": "已读"
+    }
+  ],
+  "errorCode": "null",
+  "message": "获取字典信息 D0059 成功"
+}

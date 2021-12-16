@@ -1,0 +1,13 @@
+{			
+  "status": "success",			
+  "message": "删除成功",			
+  "errorCode": null,			
+  "content": {				
+    "deptId": "1",
+    "parentDeptId": "ums_sys_dept",
+    "deptName": "部门3",
+    "deptDescribe": null,
+    "deptSort": "1",
+    "parentDeptName": "根部门"
+  }					
+}

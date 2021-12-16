@@ -1,0 +1,38 @@
+{
+  "status": "success",
+  "content": [
+    {
+      "field": "analyzer_id",
+      "name": "analyzer_id(unknown)",
+      "type": "long",
+      "dictionary": null,
+      "operators": {
+        "like": "input-str",
+        "!=": "input-str",
+        "=": "input-str"
+      }
+    }, {
+      "field": "id",
+      "name": "ID",
+      "type": "string",
+      "dictionary": null,
+      "operators": {
+        "like": "input-str",
+        "!=": "input-str",
+        "=": "input-str"
+      }
+    }, {
+      "field": "severity",
+      "name": "安全等级",
+      "type": "string",
+      "dictionary": "list_event_level",
+      "operators": {
+        "in": "checkbox",
+        "!=": "radio",
+        "=": "radio"
+      }
+    }
+  ],
+  "message": null,
+  "errorCode": null
+}

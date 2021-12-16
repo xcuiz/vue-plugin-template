@@ -1,0 +1,39 @@
+{
+  "status": "success",
+  "content": [
+    {
+      "key" : "/os",
+      "name" : "操作系统",
+      "type" : "group",
+      "children" : [
+        {
+          "key" : "/os/windows",
+          "name" : "windows",
+          "type" : "member"
+        },
+        {
+          "key": "/os/linux",
+          "name": "linux",
+          "type" : "member"
+        },
+        {
+          "key": "/os/unix",
+          "name": "unix",
+          "type" : "member"
+        }
+      ]
+    },
+    {
+      "key": "/network",
+      "name": "网络设备",
+      "type" : "group"
+    },
+    {
+      "key": "/secdev",
+      "name": "安全设备",
+      "type" : "group"
+    }
+  ],
+  "message":"查询成功！",
+  "errorCode": ""
+}

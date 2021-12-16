@@ -1,0 +1,120 @@
+{
+  "status" : "success",
+  "content": [{
+          "field": "str",
+          "name": "str",
+          "type": "string",
+          "dictionary": null,
+          "operators": {
+              "=": "input-str",
+              "!=": "input-str",
+              "&": "input-str",
+              "&=": "input-str",
+              "<": "input-str",
+              "<=": "input-str",
+              "isNull": null,
+              "isNotNull": null,
+              "like": "input-str",
+              "not like": "input-str",
+              "in": "tree",
+              "not in": "tree"
+          }
+      },
+      {
+          "field": "src_ip",
+          "name": "源IP",
+          "type": "ip",
+          "dictionary": null,
+          "operators": {
+              "=": "input-str",
+              "!=": "input-str",
+              "isNull": null,
+              "isNotNull": null,
+              "like": "input-str",
+              "not like": "input-str"
+          }
+      },
+      {
+          "field": "src_port",
+          "name": "源端口",
+          "type": "integer",
+          "dictionary": null,
+          "operators": {
+              "=": "input-int",
+              "!=": "input-int",
+              "&": "input-int",
+              "&=": "input-int",
+              "<": "input-int",
+              "<=": "input-int",
+              "in": "input-int",
+              "not in": "input"
+          }
+      },
+      {
+          "field": "risk_level",
+          "name": "日志级别",
+          "type": "string",
+          "dictionary": "event_risk_level",
+          "operators": {
+              "=": "radio",
+              "!=": "radio",
+              "isNull": null,
+              "isNotNull": null,
+              "in": "checkbox",
+              "not in": "checkbox"
+          }
+      },
+      {
+          "field": "peak_package_flow",
+          "name": "报文包数",
+          "type": "long",
+          "dictionary": null,
+          "operators": {
+              "=": "input-long",
+              "!=": "input-long",
+              "&": "input-long",
+              "&=": "input-long",
+              "<": "input-long",
+              "<=": "input-long"
+          }
+      },
+      {
+          "field": "create_time",
+          "name": "发生时间",
+          "type": "long",
+          "dictionary": null,
+          "operators": {
+              "&": "datetime",
+              "&=": "datetime",
+              "<": "datetime",
+              "<=": "datetime"
+          }
+      },
+      {
+          "field": "attack_type",
+          "name": "攻击类型",
+          "type": "string",
+          "dictionary": "event_attack_type",
+          "operators": {
+              "=": "tree",
+              "!=": "tree",
+              "isNull": null,
+              "isNotNull": null,
+              "in": "tree",
+              "not in": "tree"
+          }
+      },
+      {
+          "field": "raw_msg",
+          "name": "原始日志",
+          "type": "string",
+          "dictionary": null,
+          "operators": {
+              "like": "input-str",
+              "not like": "input-str"
+          }
+      }
+  ],
+  "message" : "成功",
+  "error_code": 0
+}

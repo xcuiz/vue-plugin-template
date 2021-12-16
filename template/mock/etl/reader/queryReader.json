@@ -1,0 +1,78 @@
+{
+  "status": "success",
+  "content": [{
+    "readers": [{
+      "readerDesc": "log、csv、text文件",
+      "readerName": "本地文件",
+      "sourceType": "LOCAL_FILE",
+      "icon": null
+    },
+      {
+        "readerDesc": "StreamSocketServer",
+        "readerName": "流式数据文件",
+        "sourceType": "STREAM_FILE",
+        "icon": null
+      }
+    ],
+    "category": "文件上传"
+  },
+    {
+      "readers": [{
+        "readerDesc": "分布式消息系统",
+        "readerName": "kafka",
+        "sourceType": "KAFKA",
+        "icon": null
+      },
+        {
+          "readerDesc": "非连接的协议",
+          "readerName": "syslog_udp",
+          "sourceType": "SYSLOG",
+          "icon": null
+        },
+        {
+          "readerDesc": "传输控制协议",
+          "readerName": "syslog_tcp",
+          "sourceType": "SYSLOG",
+          "icon": null
+        }
+      ],
+      "category": "协议加载"
+    },
+    {
+      "readers": [{
+        "readerDesc": "关系型数据",
+        "readerName": "DB2",
+        "sourceType": "JDBC",
+        "icon": null
+      },
+        {
+          "readerDesc": "关系型数据",
+          "readerName": "MySQL",
+          "sourceType": "JDBC",
+          "icon": null
+        },
+        {
+          "readerDesc": "关系型数据",
+          "readerName": "Oracle",
+          "sourceType": "JDBC",
+          "icon": null
+        },
+        {
+          "readerDesc": "关系型数据",
+          "readerName": "SQLServer",
+          "sourceType": "JDBC",
+          "icon": null
+        },
+        {
+          "readerDesc": "数据处理平台",
+          "readerName": "Hive",
+          "sourceType": "HIVE",
+          "icon": null
+        }
+      ],
+      "category": "数据库"
+    }
+  ],
+  "msg": "查询成功",
+  "errorCode": ""
+}

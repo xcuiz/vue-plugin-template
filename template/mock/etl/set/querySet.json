@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "content": {
+    "encodeType": "utf-8",
+    "timeTagType": "1",
+    "lineTagType": "1",
+    "timeReg":'',
+    "lineReg":''
+  },
+  "msg": "",
+  "errorCode": ""
+}

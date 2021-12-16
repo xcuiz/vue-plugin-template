@@ -1,0 +1,44 @@
+{
+  "status": "success",
+  "message": "查询成功",
+  "content": {
+    "total": 85,
+    "data": [{
+        "userName": "White",
+        "realName": "姚洋",
+        "ip": "227.233.162.175",
+        "path": "cid://alzlpsdss.gf/ioujhbbte",
+        "logName": "&K)",
+        "logLevel": "info",
+        "httpMethod": "post",
+        "logResult": "success",
+        "createTime": "1994-07-27 09:43:32",
+        "optType": "detail"
+      },
+      {
+        "userName": "Jones",
+        "realName": "汪丽",
+        "ip": "180.187.232.53",
+        "path": "nntp://bbebgsg.so/mynrtkgt",
+        "logName": "Jxi",
+        "logLevel": "error",
+        "httpMethod": "post",
+        "logResult": "success",
+        "createTime": "2005-08-16 17:14:31",
+        "optType": "refresh"
+      },
+      {
+        "userName": "Jackson",
+        "realName": "薛军",
+        "ip": "78.148.48.229",
+        "path": "http://pmgxykgfeo.ki/byvxiqxcnd",
+        "logName": "pSTw",
+        "logLevel": "[Bd",
+        "httpMethod": "post",
+        "logResult": "success",
+        "createTime": "1970-01-30 09:56:25",
+        "optType": "4%x^b"
+      }
+    ]
+  }
+}

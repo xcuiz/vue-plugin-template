@@ -1,0 +1,9 @@
+{
+  "errorCode": "000000",
+  "message": "服务执行成功",
+  "content": [{
+    "value": "全文检索",
+    "key": "search"
+  }],
+  "status": "success"
+}

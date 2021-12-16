@@ -1,0 +1,14 @@
+{
+  "msg": "查询成功",
+  "content": [
+    {
+      "value": "String",
+      "key": "String"
+    },
+    {
+      "value": "Integer",
+      "key": "Integer"
+    }
+  ],
+  "status": "success"
+}

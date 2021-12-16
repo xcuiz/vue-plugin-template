@@ -1,0 +1,15 @@
+{
+  "errorCode": "000000",
+  "message": "服务执行成功",
+  "content": [
+    {
+      "value": "静态配置",
+      "key": "static"
+    },
+    {
+      "value": "动态配置",
+      "key": "dhcp"
+    }
+  ],
+  "status": "success"
+}

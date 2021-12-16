@@ -1,0 +1,1 @@
+export default function (value:string, options:string): string

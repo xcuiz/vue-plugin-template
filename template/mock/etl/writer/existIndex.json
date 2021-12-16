@@ -1,0 +1,14 @@
+{
+  "msg": "查询成功",
+  "content": [
+    {
+      "value": "测试1",
+      "key": "String"
+    },
+    {
+      "value": "测试2",
+      "key": "Integer"
+    }
+  ],
+  "status": "success"
+}

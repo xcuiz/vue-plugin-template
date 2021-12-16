@@ -1,0 +1,26 @@
+cache:
+  key: $CI_COMMIT_REF_NAME
+  paths:
+    - node_modules/
+    - dist/
+
+stages:
+  - deploy
+
+deploy_master:
+  stage: deploy
+  script:
+    - npm install
+    - npm run build
+  artifacts:
+    name: "$CI_PROJECT_NAME-$CI_COMMIT_SHA"
+    paths:
+      - dist/
+    expire_in: 2 day
+  only:
+    refs:
+      - master
+    variables:
+      - $IS_PACKAGE_CLI == "yes"
+  tags:
+    - fe-tag

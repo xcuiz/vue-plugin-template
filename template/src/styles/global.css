@@ -1,0 +1,15 @@
+.flex-sb-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.el-main .el-aside {
+  overflow: inherit;
+  overflow-x: hidden;
+  -webkit-transition: width .15s;
+  transition: width .15s;
+}
+
+.container .el-table {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="194px" height="177px" viewBox="0 0 194 177" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>分组 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分组-2">
+            <g id="分组">
+                <path d="M182,176.298 L12,176.298 C5.372,176.298 0,170.926 0,164.298 L0,41.63 C0,35.002 5.372,29.63 12,29.63 L182,29.63 C188.628,29.63 194,35.002 194,41.63 L194,164.296 C194,170.924 188.628,176.298 182,176.298 Z" id="路径" fill="#FEDE3A"></path>
+                <path d="M182,159.298 L12,159.298 C5.372,159.298 0,153.926 0,147.298 L0,164.298 C0,170.926 5.372,176.298 12,176.298 L182,176.298 C188.628,176.298 194,170.926 194,164.298 L194,147.298 C194,153.924 188.628,159.298 182,159.298 Z" id="路径" fill="#E7AD27"></path>
+                <path d="M89.588,0.63 L26.078,0.63 C20.312,0.63 15.638,5.304 15.638,11.07 L15.638,29.63 L100.028,29.63 L100.028,11.07 C100.028,5.304 95.354,0.63 89.588,0.63 Z" id="路径" fill="#F7CB15"></path>
+                <rect id="矩形" fill="#E7AD27" x="15.638" y="18.798" width="84.39" height="10.834"></rect>
+            </g>
+            <text id="FTP/SFTP" font-family="Arial-BoldMT, Arial" font-size="29" font-weight="bold" fill="#E7AD27">
+                <tspan x="29" y="115">FTP/SFTP</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

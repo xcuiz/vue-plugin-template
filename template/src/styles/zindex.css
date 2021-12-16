@@ -1,0 +1,25 @@
+:root {
+    /*
+    1. 组件内部所有z-index值（图表中的tooltip层级）根据情况自定义
+    2. < 组件内loading
+    3. < 组件内下拉 popover (select/dropdown之列, 注意：不插入到 body 中)
+        el-popper 默认入到body，可通过 :append-to-body="false" 控制插入其父级
+    4. header/navigator
+      < menu（menu-popover)
+      = 2000
+    5. < dialoag/mesaage 提示等,从 2000 开始累加
+    6. < 在d ialog 内部，且必须插入到body内的popover，例如：时间控件
+
+    注意：在父级元素有滚动条的情况下，popover 插入到父级内部会出现遮挡的情况，这个时候需要插入到body内，如果插入到body之后还要降低层级，建议添加 :popper-class="el-select-popper-lower"
+
+    补充：
+    全局消息通知未关闭，此时点击一个dialog，dialog会遮挡全局消息同时，dialog打开的时候又出现消息通知，消息通知在弹窗上面。
+    这里会出现一个在遮罩上面一个在遮罩下面
+    */
+    --zindex-loading: 1500;
+    --zindex-inner-popper: 1700;
+    --zindex-header: 1990;
+    --zindex-menu: 2000;
+    --zindex-top: 5000;
+    --zindex-CodeMirror-hints: 2500;
+}

@@ -1,0 +1,14 @@
+{
+  "errorCode": "000000",
+  "message": "服务执行成功",
+  "content": [{
+      "value": "mysql",
+      "key": "mysql"
+    },
+    {
+      "value": "es",
+      "key": "es"
+    }
+  ],
+  "status": "success"
+}

@@ -1,0 +1,44 @@
+{
+  "status": "success",
+  "message": "查询成功",
+  "content": {
+    "total": 30,
+    "pageNum": 1,
+    "pageSize": 10,
+    "data": [
+      {
+        "sourceId": 1,
+        "updateDate": "2020-03-14 12:53:57",
+        "sourceDesc": "数据源1描述",
+        "sourceType": "本地文件",
+        "updateUser": "test",
+        "sourceName": "数据源1",
+        "status": "已生效",
+        "createDate": "2020-03-13 12:53:51",
+        "switch": "1"
+      },
+      {
+        "sourceId": 2,
+        "updateDate": "2020-03-14 12:53:57",
+        "sourceDesc": "数据源1描述",
+        "sourceType": "本地文件",
+        "updateUser": "test",
+        "sourceName": "数据源1",
+        "status": "已生效",
+        "createDate": "2020-03-13 12:53:51",
+        "switch": "1"
+      },
+      {
+        "sourceId": 3,
+        "updateDate": "2020-03-14 12:53:57",
+        "sourceDesc": "数据源1描述",
+        "sourceType": "本地文件",
+        "updateUser": "test",
+        "sourceName": "数据源1",
+        "status": "已生效",
+        "createDate": "2020-03-13 12:53:51",
+        "switch": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "errorCode": "000000",
+  "message": "服务执行成功",
+  "content": [{
+    "value": "字符串",
+    "key": "string"
+  }, {
+    "value": "整型",
+    "key": "integer"
+  }],
+  "status": "success"
+}

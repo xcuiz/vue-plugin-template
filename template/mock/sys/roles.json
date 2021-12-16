@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "content": {
+    "total": 40,
+    "data": [{
+        "roleId": 1,
+        "roleName": "用户管理",
+        "roleDescribe": "用户增删改查",
+        "builtin": "0"
+      },
+      {
+        "roleId": 2,
+        "roleName": "审核人",
+        "roleDescribe": "审核漏洞",
+        "builtin": "0"
+      }
+    ]
+  },
+  "message": "查询成功！"
+}
