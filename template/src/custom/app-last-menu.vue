@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-14 10:21:06
- * @LastEditTime: 2020-07-14 11:53:27
+ * @LastEditTime: 2021-12-16 13:54:37
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /ueba-web/src/views/insight/user/pages/list/pages/index.vue
@@ -28,7 +28,6 @@
           <!-- <i class="el-icon-menu"></i> -->
           <idss-icon-svg :name="item.icon || 'home'" />
 
-          <!-- {{!isCollapse? item.meta.title : item.meta.shortTitle}} -->
           <span slot="title">{{ item.meta && item.meta.title }}</span>
         </el-menu-item>
       </el-menu>
