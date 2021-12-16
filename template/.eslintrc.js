@@ -32,9 +32,6 @@ module.exports = {
       alias: {
         map: [
           ['@', './src'],
-          // ["@charts", "./src/fusion-charts"],
-          // ["@components", "./src/fusion-components"],
-          // ["@bus", "./src/fusion-components/util/bus.js"]
         ],
         extensions: ['.ts', '.js', '.jsx', '.json', '.vue']
       }

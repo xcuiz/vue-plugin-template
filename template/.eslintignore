@@ -1,12 +1,1 @@
-build/
-config/
 dist/
-src/assets/icons/
-src/custom/flowgrid/flowgrid.js
-src/compocustomnents/topo/jquery.min.js
-src/custom/topo/poc-graph.js
-src/util/logic/parser/
-src/fusion-utils
-src/fusion-components
-src/fusion-charts
-src/components/crontab-select/crontab

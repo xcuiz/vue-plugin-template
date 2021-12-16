@@ -1,11 +1,6 @@
 module.exports = {
-  presets: [
-    "@vue/cli-plugin-babel/preset",
-    // "@vue/app",
-    // ['@vue/app', { 'modules': 'auto' }]
-  ],
+  presets: ["@vue/cli-plugin-babel/preset"],
   plugins: [
-    // "add-module-exports",
     "@babel/plugin-proposal-optional-chaining",
     "@babel/plugin-proposal-nullish-coalescing-operator",
   ],

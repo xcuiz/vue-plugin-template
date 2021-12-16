@@ -9,6 +9,6 @@
       }
   },
   "exclude": [
-      "**/node_modules/*", "./mock/", "./dist"
+      "**/node_modules/*", "./dist"
   ]
 }
