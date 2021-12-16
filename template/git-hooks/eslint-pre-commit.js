@@ -1,11 +1,3 @@
-/*
- * @Author: your name
- * @Date: 2020-07-10 10:52:54
- * @LastEditTime: 2020-07-10 11:26:40
- * @LastEditors: your name
- * @Description: In User Settings Edit
- * @FilePath: /ueba-web/git-hooks/eslint-pre-commit.js
- */
 const shell = require('shelljs')
 const path = require('path')
 

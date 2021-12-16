@@ -1,6 +1,3 @@
-/**
- * Created by ligang on 2018/5/23.
- */
 const chalk = require('chalk')
 const msgPath = process.env.GIT_PARAMS
 const msg = require('fs').readFileSync(msgPath, 'utf-8').trim()
