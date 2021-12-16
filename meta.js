@@ -15,5 +15,19 @@ module.exports = {
       type: 'string',
       message: 'Author',
     },
+    router: {
+      type: 'confirm',
+      message: 'Install vue-router?',
+    },
+    vuex: {
+      type: 'confirm',
+      message: 'Install vuex?',
+    },
   },
+  filters: {
+    'src/store/**/*': 'vuex',
+    'src/router/**/*': 'router'
+  },
+  completeMessage:
+    'To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev',
 }

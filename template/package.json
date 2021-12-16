@@ -15,7 +15,9 @@
   },
   "dependencies": {
     "core-js": "^3.19.3",
-    "vue": "^2.6.10"
+    "vue": "^3.5.3"{{#router}},
+    "vue-router": "^3.0.1"{{/router}}{{#vuex}},
+    "vuex": "^3.6.2"{{/vuex}}
   },
   "devDependencies": {
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.12.1",
