@@ -29,5 +29,5 @@ module.exports = {
     'src/router/**/*': 'router'
   },
   completeMessage:
-    'To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev',
+    'To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}yarn install\n  yarn run serve',
 }
