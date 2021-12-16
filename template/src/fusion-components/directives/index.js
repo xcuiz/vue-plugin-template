@@ -1,8 +1,0 @@
-export { default as clipBoard } from './clip-board.js'
-export { default as dragTable } from './drag-table.js'
-export { default as isDrag } from './drag.js'
-export { default as focus } from './focus.js'
-export { default as idssPopper } from './popper.js'
-export { default as responseDialog } from './response-dialog.js'
-export { default as iscroll } from './scroll.js'
-export { default as idssTooltip } from './tooltip.js'
