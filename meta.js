@@ -1,6 +1,6 @@
 module.exports = {
   prompts: {
-    type: {
+    appType: {
       type: 'list',
       message: 'Main application or sub application',
       choices: [
@@ -15,6 +15,15 @@ module.exports = {
           short: 'sub',
         },
       ],
+    },
+    isAddRemote: {
+      type: 'confirm',
+      message: 'Add an example remote host?'
+    },
+    remoteName: {
+      when: 'isAddRemote',
+      type: 'string',
+      message: 'remote project name'
     },
     name: {
       type: 'string',

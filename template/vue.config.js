@@ -2,10 +2,13 @@ const GitVersionPlugin = require("git-version-html-webpack-plugin");
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 const ModuleFederationPlugin =
   require("webpack").container.ModuleFederationPlugin;
+{{#if_eq appType "sub"}}
 const { getPublicPath } = require("./src/publicPath");
+{{/if_eq}}
 
 const isProduction = process.env.NODE_ENV === "production";
 
+{{#if_eq appType "sub"}}
 const getPages = () => {
   if (isProduction) {
     return {
@@ -20,12 +23,17 @@ const getPages = () => {
     return undefined;
   }
 };
+{{/if_eq}}
 
 // 获取 webpack allias别名
 module.exports = {
+  {{#if_eq appType "sub"}}
   publicPath: getPublicPath(),
+  {{/if_eq}}
   runtimeCompiler: true,
+  {{#if_eq appType "sub"}}
   pages: getPages(),
+  {{/if_eq}}
 
   chainWebpack: (config) => {
     config.plugins.delete("prefetch");
@@ -41,8 +49,15 @@ module.exports = {
         name: "{{ name }}",
         filename: "remoteEntry.js",
         exposes: {
-          // "./router/expose": "./src/router/expose",
+          {{#if_eq appType "sub"}}
+          "./router/routes": "./src/router/routes",
+          {{/if_eq}}
         },
+        {{#if_eq appType "main"}}
+        remotes: {
+          dashboard: '{{remoteName}}@/{{remoteName}}/remoteEntry.js',
+        },
+        {{#if_eq}}
         shared: {
           ...require("./package.json").dependencies,
           vue: {
