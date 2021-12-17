@@ -70,7 +70,16 @@ module.exports = {
 
   devServer: {
     host: "0.0.0.0",
-    port: 9090,
+    port: {{#if_eq appType "main"}}9090{{#if_eq}}{{#if_eq appType "sub"}}9191{{#if_eq}},
+    {{#if_eq appType "main"}}
+    proxy: {
+      // 子应用代理
+      '/{{remoteName}}': {
+        target: 'http://localhost:9191',
+        changeOrigin: true
+      }
+    }
+    {{#if_eq}}
   },
 
   // 在开发环境下，在每次保存时 lint 代码
