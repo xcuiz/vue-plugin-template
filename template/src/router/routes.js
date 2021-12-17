@@ -16,6 +16,6 @@ const routes = [
     component: Sub,
   },
   {{/if_eq}}
-]
+];
 
-export default routes
+export default routes;

@@ -17,7 +17,9 @@ module.exports = {
       ],
     },
     isAddRemote: {
-      when: 'appType === "main"',
+      when(answers) {
+        return answers.appType === 'main'
+      },
       type: 'confirm',
       message: 'Add an example remote host?'
     },

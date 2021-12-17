@@ -1,3 +1,5 @@
+const isProduction = process.env.NODE_ENV === "production";
+
 module.exports = {
   root: true,
   env: {
@@ -8,7 +10,7 @@ module.exports = {
     parser: "babel-eslint"
   },
   rules: {
-    'no-console': 'error',
+    'no-console': isProduction ? 'error' : 0,
     'no-debugger': 'error',
     'vue/require-default-prop': 0,
     'vue/order-in-components': 'error',

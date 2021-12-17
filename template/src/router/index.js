@@ -6,14 +6,14 @@ const { getPublicPath } = require("@/publicPath");
 import routes from "./routes";
 
 {{#if_eq appType "main"}}
-let allRoutes = [...routes]
+let allRoutes = [...routes];
 
-let remote = []
+let remote = [];
 try {
   remote = require("{{remoteName}}/router/routes").default;
 
   allRoutes.push(...remote);
-} catch(e) {
+} catch (e) {
   console.error(e);
 }
 {{/if_eq}}
