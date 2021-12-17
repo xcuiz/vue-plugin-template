@@ -18,6 +18,8 @@ module.exports = {
     },
     isAddRemote: {
       when(answers) {
+        console.log(JSON.stringify(answers))
+        console.log(answers)
         return answers.appType === 'main'
       },
       type: 'confirm',
