@@ -57,7 +57,7 @@ module.exports = {
         remotes: {
           dashboard: '{{remoteName}}@/{{remoteName}}/remoteEntry.js',
         },
-        {{#if_eq}}
+        {{if_eq}}
         shared: {
           ...require("./package.json").dependencies,
           vue: {
@@ -70,7 +70,7 @@ module.exports = {
 
   devServer: {
     host: "0.0.0.0",
-    port: {{#if_eq appType "main"}}9090{{#if_eq}}{{#if_eq appType "sub"}}9191{{#if_eq}},
+    port: {{#if_eq appType "main"}}9090{{if_eq}}{{#if_eq appType "sub"}}9191{{if_eq}},
     {{#if_eq appType "main"}}
     proxy: {
       // 子应用代理
@@ -79,7 +79,7 @@ module.exports = {
         changeOrigin: true
       }
     }
-    {{#if_eq}}
+    {{if_eq}}
   },
 
   // 在开发环境下，在每次保存时 lint 代码

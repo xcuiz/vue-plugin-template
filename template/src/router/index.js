@@ -16,7 +16,7 @@ try {
 } catch(e) {
   console.error(e)
 }
-{{#if_eq}}
+{{if_eq}}
 
 Vue.use(Router);
 
@@ -25,7 +25,7 @@ const router = new Router({
   base: getPublicPath(),
   {{/if_eq}}
   mode: "history",
-  routes: {{#if_eq appType "main"}}allRoutes{{#if_eq}}{{#if_eq appType "sub"}}routes{{#if_eq}}
+  routes: {{#if_eq appType "main"}}allRoutes{{if_eq}}{{#if_eq appType "sub"}}routes{{if_eq}}
 });
 
 export default router
