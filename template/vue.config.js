@@ -53,11 +53,11 @@ module.exports = {
           "./router/routes": "./src/router/routes",
           {{/if_eq}}
         },
-        {{#if_eq appType "main"}}
         remotes: {
-          dashboard: '{{remoteName}}@/{{remoteName}}/remoteEntry.js',
+          {{#if_eq appType "main"}}
+          "{{remoteName}}": "{{remoteName}}@/{{remoteName}}/remoteEntry.js",
+          {{/if_eq}}
         },
-        {{/if_eq}}
         shared: {
           ...require("./package.json").dependencies,
           vue: {
@@ -76,7 +76,7 @@ module.exports = {
       // 子应用代理
       '/{{remoteName}}': {
         target: 'http://localhost:9191',
-        changeOrigin: true
+        changeOrigin: true,
       }
     }
     {{/if_eq}}

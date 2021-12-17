@@ -52,7 +52,8 @@ module.exports = {
   filters: {
     'src/store/**/*': 'vuex',
     'src/router/**/*': 'router',
-    'src/views/example/**/*': 'router'
+    'src/views/example/**/*': 'router',
+    'src/views/sub/**/*': 'appType === "sub"'
   },
   completeMessage:
     'To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}yarn install\n  yarn run serve',
