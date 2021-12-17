@@ -1,5 +1,21 @@
 module.exports = {
   prompts: {
+    type: {
+      type: 'list',
+      message: 'Main application or sub application',
+      choices: [
+        {
+          name: 'main',
+          value: 'main',
+          short: 'main',
+        },
+        {
+          name: 'sub',
+          value: 'sub',
+          short: 'sub',
+        },
+      ],
+    },
     name: {
       type: 'string',
       required: true,
