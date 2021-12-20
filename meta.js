@@ -1,5 +1,20 @@
 module.exports = {
   prompts: {
+    name: {
+      type: 'string',
+      required: true,
+      message: 'Project name',
+    },
+    description: {
+      type: 'string',
+      required: false,
+      message: 'Project description',
+      default: 'A Vue.js project',
+    },
+    author: {
+      type: 'string',
+      message: 'Author',
+    },
     appType: {
       type: 'list',
       message: 'Main application or sub application',
@@ -16,30 +31,10 @@ module.exports = {
         },
       ],
     },
-    isAddRemote: {
-      when: 'appType',
-      type: 'confirm',
-      message: 'Add an example remote host?'
-    },
     remoteName: {
       when: 'isAddRemote',
       type: 'string',
       message: 'remote project name'
-    },
-    name: {
-      type: 'string',
-      required: true,
-      message: 'Project name',
-    },
-    description: {
-      type: 'string',
-      required: false,
-      message: 'Project description',
-      default: 'A Vue.js project',
-    },
-    author: {
-      type: 'string',
-      message: 'Author',
     },
     router: {
       type: 'confirm',
