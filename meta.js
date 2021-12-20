@@ -3,6 +3,7 @@ module.exports = {
     appType: {
       type: 'list',
       message: 'Main application or sub application',
+      name: 'appType',
       choices: [
         {
           name: 'main',
@@ -17,6 +18,7 @@ module.exports = {
       ],
     },
     isAddRemote: {
+      name: 'isAddRemote',
       when: answers => {
         debugger
         console.log(JSON.stringify(answers))
