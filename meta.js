@@ -19,14 +19,7 @@ module.exports = {
     },
     isAddRemote: {
       name: 'isAddRemote',
-      when: answers => {
-        debugger
-        console.log(JSON.stringify(answers))
-        // return (a) => {
-          // console.log(JSON.stringify(a))
-          return answers['appType'] === 'main'
-        // }
-      },
+      when: 'data.appType === "main"',
       type: 'confirm',
       message: 'Add an example remote host?'
     },
