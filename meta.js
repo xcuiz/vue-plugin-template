@@ -18,11 +18,12 @@ module.exports = {
     },
     isAddRemote: {
       when: answers => {
+        debugger
         console.log(JSON.stringify(answers))
-        return (a) => {
-          console.log(JSON.stringify(a))
+        // return (a) => {
+          // console.log(JSON.stringify(a))
           return answers['appType'] === 'main'
-        }
+        // }
       },
       type: 'confirm',
       message: 'Add an example remote host?'
