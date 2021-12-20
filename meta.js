@@ -3,7 +3,6 @@ module.exports = {
     appType: {
       type: 'list',
       message: 'Main application or sub application',
-      name: 'appType',
       choices: [
         {
           name: 'main',
@@ -18,8 +17,7 @@ module.exports = {
       ],
     },
     isAddRemote: {
-      name: 'isAddRemote',
-      when: 'data.appType === "main"',
+      when: 'appType === "main"',
       type: 'confirm',
       message: 'Add an example remote host?'
     },
